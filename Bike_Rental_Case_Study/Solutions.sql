@@ -17,7 +17,8 @@ Keep in mind that some customers may not have purchased any memberships yet. In 
 select c.name as customer_name, 
        count(m.id) as membership_count
 from customer c left join membership m on c.id=m.customer_id
-group by customer_name order by membership_count desc;
+group by customer_name 
+order by membership_count desc;
 
 
 /**Question 3. Emily is working on a special offer for the winter months. Can you help her prepare a list of new rental prices?
